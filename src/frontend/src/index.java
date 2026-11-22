@@ -1,5 +1,7 @@
 package frontend.src;
+
 import java.util.Scanner;
+
 public class index {
     public static void main(String[] args) {
         int saldo = 1000; // Saldo inicial
@@ -64,7 +66,7 @@ public class index {
                     break;
             }
         }
-        
+
         while (opcion != 4); // Repetir hasta que el usuario elija salir
     }
 }
