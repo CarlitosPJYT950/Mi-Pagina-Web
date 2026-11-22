@@ -24,31 +24,47 @@ public class index {
             switch (opcion) {
                 case 1:
                     int saldoActual = saldo; // Consultar saldo
+
                     System.out.println("Su saldo actual es: " + saldoActual);
+
                     break;
+
                 case 2:
                     System.out.print("Ingrese la cantidad a retirar: ");
+
                     int cantidadRetirar = scanner.nextInt();
+
                     if (cantidadRetirar <= saldo) {
                         saldo -= cantidadRetirar; // Retirar dinero
+
                         System.out.println("Retiro exitoso. Su nuevo saldo es: " + saldo);
                     }
                     else {System.out.println("Saldo insuficiente.");}
+
                     break;
+
                 case 3:
                     System.out.print("Ingrese la cantidad a depositar: ");
+
                     int cantidadDepositar = scanner.nextInt();
                     saldo += cantidadDepositar; // Depositar dinero
+
                     System.out.println("Depósito exitoso. Su nuevo saldo es: " + saldo);
+
                     break;
+
                 case 4:
                     System.out.println("Gracias por usar el cajero virtual. ¡Hasta luego!");
+
                     break;
+
                 default:
                     System.out.println("Opción no válida. Por favor, intente de nuevo.");
                     // No se espera que llegue aquí debido a la validación anterior
                     break;
             }
-        } while (opcion != 4); // Repetir hasta que el usuario elija salir
+        }
+        
+        while (opcion != 4); // Repetir hasta que el usuario elija salir
     }
 }
