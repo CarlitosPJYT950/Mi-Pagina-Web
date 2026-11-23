@@ -20,7 +20,7 @@ ENDM
 
             SIES:
                 printChar 'a'
-                
+
                 jmp WHILE
             NOES:
                 printChar 'z'
@@ -30,7 +30,7 @@ ENDM
                 jmp NOES2
             SIES2:
                 jmp EXITWHILE
-            NOES:
+            NOES2:
                 jmp WHILE
         EXITWHILE:
 
