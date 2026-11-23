@@ -7,14 +7,9 @@ ENDM
 .MODEL
 .STACK
 .DATA
-    COND db 10d
-    COND2 db 10b
 .CODE
     ;description
     main PROC
-        mov DX,@data
-        mov DS,DX
-        xor DX,DX
 
         CFOR:
             cmp SI,5d
