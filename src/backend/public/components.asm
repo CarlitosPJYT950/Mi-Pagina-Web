@@ -53,7 +53,7 @@ ENDM
                 NOES2:
                     inc SI
                     jmp WHILE
-            EXITWHILE:
+            EXITWHILE2:
         .EXIT
     main ENDP
 
