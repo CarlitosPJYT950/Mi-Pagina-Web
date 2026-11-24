@@ -1,4 +1,4 @@
-.MODEL
+.MODEL small
 .STACK
 .DATA
     char db ?
