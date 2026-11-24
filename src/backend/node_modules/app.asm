@@ -4,7 +4,7 @@ printChar MACRO char
     int 21h
 ENDM
 
-.MODEL
+.MODEL small
 .STACK
 .DATA
     COND db 10d
