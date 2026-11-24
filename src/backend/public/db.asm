@@ -9,6 +9,10 @@
         int 21h
         
         mov char,al
+
+        mov ah,2h
+        mov dl,10d
+        int 21h
         
         mov ah,2h
         mov dl,char
