@@ -5,7 +5,7 @@
     Char db 'Ingrese el primer caracter:',10,'$'
     Char2 db 10,'Ingrese el segundo caracter:',10,' $'
     resultado db 10,'Los datos ingresados son:',10,'$'
-    fin db 'FIN DEL PROGRAMA $'
+    fin db 10'FIN DEL PROGRAMA $'
 .CODE
     ;description
     main PROC
