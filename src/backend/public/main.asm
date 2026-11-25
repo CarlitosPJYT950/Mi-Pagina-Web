@@ -35,11 +35,11 @@
         mov AH,9h
         int 21h
 
-        mov AH,9h
+        mov AH,2h
         mov DL,'a'
         int 21h
 
-        mov AH,9h
+        mov AH,2h
         mov DL,'b'
         int 21h
 
