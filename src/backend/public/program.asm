@@ -48,7 +48,7 @@
         pop AX
 
         mov AH,2h
-        mov DL,'b'
+        mov DL,AL
         int 21h
 
         mov DX,offset fin
@@ -56,7 +56,7 @@
         int 21h
 
         .EXIT
-        
+
     main ENDP
 
 end main
