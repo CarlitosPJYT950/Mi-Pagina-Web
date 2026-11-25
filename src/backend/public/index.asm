@@ -1,7 +1,11 @@
 .MODEL small
 .STACK
 .DATA
-msg db 'Hello World!$'
+    msg db 'Hello World!',10,'$'
+    Char db 'Ingrese el primer caracter:',10,'$'
+    Char2 db 'Ingrese el segundo caracter:',10,' $'
+    resultado db 'Los datos ingresados son:',10,'$'
+    fin db 'FIN DEL PROGRAMA $'
 .CODE
     ;description
     main PROC
@@ -10,6 +14,22 @@ msg db 'Hello World!$'
         xor DX,DX
 
         mov DX,offset msg
+        mov AH,9h
+        int 21h
+
+        mov DX,offset Char
+        mov AH,9h
+        int 21h
+
+        mov DX,offset Char2
+        mov AH,9h
+        int 21h
+
+        mov DX,offset resultado
+        mov AH,9h
+        int 21h
+
+        mov DX,offset fin
         mov AH,9h
         int 21h
 
